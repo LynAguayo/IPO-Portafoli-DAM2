@@ -708,3 +708,105 @@ span {
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
+
+/* ========================================================================= */
+/* 3. Estilos para la sección: SOFT SKILLS (CON FONDO Y TAMAÑO AMPLIADO) */
+/* ========================================================================= */
+
+.softskills {
+    /* Fondo principal de la sección: var(--second-bg-color) */
+    background: var(--second-bg-color); 
+    padding: 5rem 9%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Ayuda a centrar verticalmente si la pantalla es grande */
+    min-height: 70vh; 
+}
+
+/* El título principal de la sección */
+.softskills .heading {
+    text-align: center;
+    /* Usamos 4.5rem de Hard Skills, pero lo reforzamos con un poco más de margen */
+    margin-bottom: 4.5rem; 
+}
+
+/* El grid principal: 4 columnas en escritorio */
+.softskills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1.8rem; /* Copia el gap de la sección Hard Skills */
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Estilo de la tarjeta (Recuadro) */
+.softskills-grid .skill-card {
+    /* Fondo de la tarjeta (debe ser el color más oscuro para contrastar con la sección) */
+    background: var(--bg-color); 
+    padding: 2.5rem 2rem; /* Aumentamos el padding para hacer las tarjetas más grandes */
+    border-radius: 1rem;
+    
+    /* Estilos de Hard Skills (Sombra y Borde) */
+    box-shadow: 6px 6px 15px var(--main-color); 
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: 1px solid var(--text-color); 
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Efecto hover (Copia de Hard Skills) */
+.softskills-grid .skill-card:hover {
+    box-shadow: 6px 6px 15px var(--hover-color);
+    transform: scale(1.03); 
+    border: 1px solid var(--hover-color);
+}
+
+/* Estilo para los íconos Boxicon (MÁS GRANDE) */
+.skill-card i { 
+    display: block;
+    font-size: 4rem; /* Iconos grandes para rellenar */
+    margin-bottom: 1rem;
+    color: var(--main-color); 
+}
+
+/* Estilo para el título H3 (MÁS GRANDE) */
+.skill-card h3 {
+    font-size: 1.6rem; 
+    color: var(--text-color); 
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+/* Estilo para el párrafo (MÁS GRANDE) */
+.skill-card p {
+    font-size: 1.05rem; 
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Responsive: 2 columnas en Tabletas (1200px) */
+@media (max-width: 1200px) {
+    .softskills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem; 
+    }
+}
+
+/* Responsive: 1 columna en Móviles (768px) */
+@media (max-width: 768px) {
+    .softskills-grid {
+        grid-template-columns: 1fr; 
+        gap: 1.2rem;
+    }
+    .skill-card i { font-size: 3.5rem; }
+    .skill-card h3 { font-size: 1.4rem; }
+    .skill-card p { font-size: 0.95rem; }
+}
