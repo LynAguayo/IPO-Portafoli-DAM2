@@ -1,156 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <!-- Configuración del documento -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evelyn Aguayo Website</title>
-
-    <link rel="shortcut icon" href="images/patito.ico" title="Patito" />
-
-    <!-- Vincula box icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-
-    <!-- Vincula css files-->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media_responsive.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evelyn Aguayo - Portfolio</title>
+    <link rel="shortcut icon" href="images/patito.ico">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Sección Encabezado  -->
-    <header class="header">
-        <a href="#home" class="logo">Evelyn Aguayo</a>
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home">Inicio</a>
+    <div class="animated-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#home" class="logo">&lt;Evelyn/&gt;</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
             <a href="#about">Sobre Mí</a>
-            <a href="#skills">Hard-Skills</a>
-            <a href="#softskills">Soft-Skills</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Proyectos</a>
             <a href="#journey">Trayectoria</a>
-            <a href="#contact">Contáctame</a>
-        </nav>
-    </header>
-
-    <!-- Sección Inicio -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hola, mi nombre es</h3>
-            <h1>Evelyn <span>Aguayo</span></h1>
-            <h3>Soy <span class="multiple-text"></span></h3>
-            <p>Me considero una persona proactiva, comprometida con el aprendizaje continuo. Mi objetivo es
-                desarrollarme
-                profesionalmente en el sector IT.
-            </p>
-
-            <div class="social-media">
-                <a href="mailto:lyn.aguayoc@gmail.com"><i class='bx bxl-gmail'></i></a>
-                <a href="tel:+34640954213"><i class='bx bxs-phone'></i></a>
-                <a href="https://github.com/LynAguayo"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/lynaguayo"><i class='bx bxl-linkedin'></i></a>
-            </div>
-
-            <a href="https://drive.google.com/file/d/1C3h35Xf8BwKFBofWL42_WTHnlC7NQdEb/view?usp=drive_link"
-                class="btn">Descargar CV</a>
+            <a href="#contact">Contactame</a>
         </div>
+        <div class="menu-toggle" id="menuToggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
 
-        <div class="home-img">
-            <img src="images/foto_principal.jpg" alt="">
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="dot"></span>
+                    On
+                </div>
+                <h1>Hola! Soy <span class="gradient-text">Evelyn Aguayo</span></h1>
+                <div class="typing-container">
+                    <span class="typed-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-desc">Junior Developer especializada en <strong>Java</strong> y <strong>Python</strong>. Actualmente en prácticas en <span class="highlight">Nestlé</span>, construyendo soluciones tecnológicas innovadoras.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="https://drive.google.com/file/d/1C3h35Xf8BwKFBofWL42_WTHnlC7NQdEb/view" class="btn btn-secondary" target="_blank">Descargar CV</a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:lyn.aguayoc@gmail.com"><i class='bx bxl-gmail'></i></a>
+                    <a href="https://github.com/LynAguayo" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/lynaguayo" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="tel:+34640954213"><i class='bx bxs-phone'></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-container">
+                    <img src="images/foto_principal.jpg" alt="Evelyn Aguayo">
+                    <div class="glow"></div>
+                </div>
+                <div class="float-card card-1">
+                    <img src="images/skills/java.png" alt="Java">
+                    <span>Java</span>
+                </div>
+                <div class="float-card card-2">
+                    <img src="images/skills/python.png" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="float-card card-3">
+                    <img src="images/skills/javascript.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Sección Sobre Mí-->
     <section class="about" id="about">
-        <div class="about-content">
-            <h2 class="heading">Sobre <span>Mí</span></h2>
-            <h3>Junior <span>Developer</span></h3>
-            <p>
-                Soy <strong>Evelyn Aguayo</strong>, estudiante de <strong>Desarrollo de Aplicaciones Multiplataforma (DAM)</strong>
-                en La Salle Gràcia. Me apasiona la programación y me estoy especializando en el desarrollo y la gestión de 
-                <strong>bases de datos</strong>.
-            </p>
-            <p>
-                Actualmente, realizo mis prácticas en <strong>Nestlé</strong> (equipo de <strong>Security and Compliance</strong>), 
-                adquiriendo experiencia en ciberseguridad en un entorno internacional. Soy una persona <strong>proactiva, resolutiva y comprometida</strong>. 
-                Hablo con fluidez inglés, español y catalán, facilitando la colaboración con equipos multiculturales.
-            </p>
-            <p>
-                Mi valor añadido reside en mi <strong>esfuerzo</strong> y <strong>sentido de responsabilidad</strong>, priorizando siempre el equilibrio
-                entre calidad y eficiencia en el código. Mi motivación es seguir creciendo como desarrolladora
-                y optimizar procesos para aportar valor tangible al equipo.
-            </p>
+        <div class="container">
+            <div class="section-header">
+                <span class="number">01.</span>
+                <h2 class="gradient-text">Sobre Mí</h2>
+            </div>
+            
+            <div class="about-intro">
+                <p>Soy <strong>Evelyn Aguayo</strong>, estudiante de <strong>Desarrollo de Aplicaciones Multiplataforma (DAM)</strong> en La Salle Gràcia. Me apasiona la programación y me estoy especializando en el desarrollo y la gestión de <strong>bases de datos</strong>.</p>
+                
+                <p>Actualmente, realizo mis prácticas en <strong>Nestlé</strong> (equipo de <strong>Security and Compliance</strong>), adquiriendo experiencia en ciberseguridad en un entorno internacional. Soy una persona <strong>proactiva, resolutiva y comprometida</strong>. Hablo con fluidez inglés, español y catalán, facilitando la colaboración con equipos multiculturales.</p>
+                
+                <p>Mi valor añadido reside en mi <strong>esfuerzo</strong> y <strong>sentido de responsabilidad</strong>, priorizando siempre el equilibrio entre calidad y eficiencia en el código. Mi motivación es seguir creciendo como desarrolladora y optimizar procesos para aportar valor tangible al equipo.</p>
+            </div>
 
-            <!--Linea temporal para la sección Formación y Experiencia Laboral -->
-            <div class="timeline-wrapper">
+            <div class="values-grid">
+                <div class="value-card">
+                    <span>💡</span>
+                    <h4>Proactiva</h4>
+                    <p>Busco soluciones antes de que surjan problemas</p>
+                </div>
+                <div class="value-card">
+                    <span>🎯</span>
+                    <h4>Comprometida</h4>
+                    <p>Calidad y eficiencia en cada línea de código</p>
+                </div>
+                <div class="value-card">
+                    <span>🚀</span>
+                    <h4>Autodidacta</h4>
+                    <p>Aprendizaje continuo y mejora constante</p>
+                </div>
+            </div>
 
-                <div class="timeline-row">
-                    <!-- Contenedor para la sección Formación-->
-                    <div class="timeline-col">
-                        <h2 class="heading-timeline"><i class='bx bxs-graduation'></i>Formación <span>Académica</span>
-                        </h2>
-
-                        <div class="timeline-box">
-                            <div class="content-box">
-                                <div class="date">
-                                    <p><i class='bx bxs-calendar'></i> Septiembre 2024 - Actual</p>
-                                    <p><i class='bx bxs-map'></i> La Salle Gràcia, Barcelona</p>
-                                </div>
-                                <h3>CFGS Desarrollo de Aplicaciones Multiplataforma</h3>
+            <div class="timelines-container">
+                <div class="timeline-column">
+                    <h3 class="timeline-title">
+                        <i class='bx bxs-graduation'></i>
+                        Formación Académica
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="marker"></div>
+                            <div class="content">
+                                <span class="date">Septiembre 2024 - Actual</span>
+                                <h4>CFGS Desarrollo de Aplicaciones Multiplataforma</h4>
+                                <p class="location">La Salle Gràcia, Barcelona</p>
                             </div>
-
-                            <div class="content-box">
-                                <div class="date">
-                                    <p><i class='bx bxs-calendar'></i> Junio 2022 - Julio 2023</p>
-                                    <p><i class='bx bxs-map'></i> EOI Barcelona Drassanes, Barcelona</p>
-                                </div>
-                                <h3>Certificado de Inglés Nivel C1</h3>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="marker"></div>
+                            <div class="content">
+                                <span class="date">Junio 2022 - Julio 2023</span>
+                                <h4>Certificado de Inglés Nivel C1</h4>
+                                <p class="location">EOI Barcelona Drassanes, Barcelona</p>
                             </div>
-
-                            <div class="content-box">
-                                <div class="date">
-                                    <p><i class='bx bxs-calendar'></i> Septiembre 2020 - Junio 2022</p>
-                                    <p><i class='bx bxs-map'></i> Institut Caterina Albert, Barcelona</p>
-                                </div>
-                                <h3>Bachillerato</h3>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="marker"></div>
+                            <div class="content">
+                                <span class="date">Septiembre 2020 - Junio 2022</span>
+                                <h4>Bachillerato</h4>
+                                <p class="location">Institut Caterina Albert, Barcelona</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Contenedor para la sección Experiencia Profesional-->
-                    <div class="timeline-col">
-                        <h2 class="heading-timeline"><i class='bx bxs-briefcase-alt-2'></i></i>Experiencia
-                            <span>Laboral</span>
-                        </h2>
-
-                        <div class="timeline-box">
-                             <div class="content-box">
-                                <div class="date">
-                                    <p><i class='bx bxs-calendar'></i> Junio 2024 - Actual</p>
-                                    <p><i class='bx bxs-map'></i> Nestlé, Barcelona</p>
-                                </div>
-                                <h3>Prácticas en Ciberseguridad</h3>
+                <div class="timeline-column">
+                    <h3 class="timeline-title">
+                        <i class='bx bxs-briefcase-alt-2'></i>
+                        Experiencia Laboral
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="marker"></div>
+                            <div class="content">
+                                <span class="date">Junio 2024 - Actual</span>
+                                <h4>Prácticas en Ciberseguridad</h4>
+                                <p class="location">Nestlé, Barcelona</p>
                                 <p>Colaboración con el equipo de Security and Compliance en un entorno internacional, enfocada en ciberseguridad y normativas.</p>
                             </div>
-
-                            <div class="content-box">
-                                <div class="date">
-                                    <p><i class='bx bxs-calendar'></i> Noviembre 2023 - Agosto 2024</p>
-                                    <p><i class='bx bxs-map'></i> Lefties Glòries, Barcelona</p>
-                                </div>
-                                <h3>Dependienta</h3>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="marker"></div>
+                            <div class="content">
+                                <span class="date">Noviembre 2023 - Agosto 2024</span>
+                                <h4>Dependienta</h4>
+                                <p class="location">Lefties Glòries, Barcelona</p>
                                 <p>Atención al cliente, gestión del inventario digital y organización de productos.</p>
                             </div>
-
-                            <div class="content-box">
-                                <div class="date">
-                                    <p><i class='bx bxs-calendar'></i> Septiembre 2022 - Junio 2023</p>
-                                    <p><i class='bx bxs-map'></i> Barcelona</p>
-                                </div>
-                                <h3>Profesora Particular</h3>
-                                <p>Brindé apoyo a estudiantes de ESO en materias como matemáticas, biología y química.
-                                </p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="marker"></div>
+                            <div class="content">
+                                <span class="date">Septiembre 2022 - Junio 2023</span>
+                                <h4>Profesora Particular</h4>
+                                <p class="location">Barcelona</p>
+                                <p>Brindé apoyo a estudiantes de ESO en materias como matemáticas, biología y química.</p>
                             </div>
                         </div>
                     </div>
@@ -159,293 +182,426 @@
         </div>
     </section>
 
-    <!-- Sección Habilidades-->
     <section class="skills" id="skills">
-        <h2 class="heading">Mis <span>Hard Skills</span></h2>
-
         <div class="container">
-            <div class="row">
-                <div class="bar">
-                    <div class="info">
-                        <img src="images/skills/java.png"><span>Java</span>
-                    </div>
+            <div class="section-header">
+                <span class="number">02.</span>
+                <h2 class="gradient-text">Hard Skills</h2>
+            </div>
+            <div class="skills-grid-centered">
+                <div class="skill-card">
+                    <img src="images/skills/java.png" alt="Java">
+                    <h4>Java</h4>
                 </div>
-
-                <div class="bar">
-                    <div class="info">
-                        <img src="images/skills/c.png"><span>C</span>
-                    </div>
+                <div class="skill-card">
+                    <img src="images/skills/python.png" alt="Python">
+                    <h4>Python</h4>
                 </div>
-
-                <div class="bar">
-                    <div class="info">
-                        <img src="images/skills/python.png"><span>Python</span>
-                    </div>
+                <div class="skill-card">
+                    <img src="images/skills/mysql.png" alt="MySQL">
+                    <h4>MySQL</h4>
                 </div>
-
-                <div class="bar">
-                    <div class="info">
-                        <img src="images/skills/mysql.png"><span>MySQL</span>
-                    </div>
+                <div class="skill-card">
+                    <img src="images/skills/c.png" alt="C">
+                    <h4>C</h4>
                 </div>
-
-                <div class="bar">
-                    <div class="info">
-                        <img src="images/skills/html.png"><span>HTML</span>
-                    </div>
+                <div class="skill-card">
+                    <img src="images/skills/html.png" alt="HTML">
+                    <h4>HTML5</h4>
                 </div>
-
-                <div class="bar">
-                    <div class="info">
-                        <img src="images/skills/css3.png"><span>CSS</span>
-                    </div>
+                <div class="skill-card">
+                    <img src="images/skills/css3.png" alt="CSS">
+                    <h4>CSS3</h4>
                 </div>
-
-                <div class="bar">
-                    <div class="info">
-                        <img src="images/skills/javascript.png"><span>JavaScript</span>
-                    </div>
+                <div class="skill-card">
+                    <img src="images/skills/javascript.png" alt="JavaScript">
+                    <h4>JavaScript</h4>
                 </div>
-
-                <div class="bar">
-                    <div class="info">
-                        <img src="images/skills/git.png"><span>Git</span>
-                    </div>
+                <div class="skill-card">
+                    <img src="images/skills/git.png" alt="Git">
+                    <h4>Git</h4>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="softskills" id="softskills">
-        <h2 class="heading">Mis <span>Soft Skills</span></h2>
-
-        <div class="softskills-grid">
-            
-            <div class="skill-card">
-                <i class='bx bx-rocket'></i> 
-                <h3>Proactividad y Resolución</h3>
-                <p>Busco soluciones eficientes de forma autónoma. Mi enfoque es anticiparme a los problemas y ofrecer soluciones antes de que se requieran.</p>
-            </div>
-
-            <div class="skill-card">
-                <i class='bx bx-calendar-check'></i> 
-                <h3>Gestión del Tiempo</h3>
-                <p>Aplico técnicas de priorización para cumplir plazos y maximizar la eficiencia, como lo demostré en el proyecto Odoo.</p>
-            </div>
-
-            <div class="skill-card">
-                <i class='bx bx-shield-alt-2'></i> 
-                <h3>Compromiso y Responsabilidad</h3>
-                <p>Demuestro una alta ética de trabajo y un sentido de responsabilidad innegable en todas mis tareas, garantizando la calidad.</p>
-            </div>
-
-            <div class="skill-card">
-                <i class='bx bx-globe'></i> 
-                <h3>Adaptabilidad</h3>
-                <p>Me adapto rápidamente a equipos diversos y entornos internacionales, comunicándome con fluidez en inglés y español.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!--Sección Proyectos-->
     <section class="projects" id="projects">
-        <h2 class="heading">Mis<span> Proyectos</span></h2>
-
-        <div class="projects-box">
-            <div class="projects-card">
-                <img src="images/projects/rana_polis.png">
-                <h3>Rana vs Polis</h3>
-                <p>Es un juego 2D desarrollado en <strong>Python</strong> con <strong>Pygame</strong>, donde controlas
-                    una rana que
-                    recoge monedas mientras evita coches de policía. Combina estrategia y acción en un desafío de
-                    creciente dificultad.
-                </p>
-                <a href="https://github.com/LynAguayo/Python-Game---Frog-VS-Police" class="btn">Ver Proyecto</a>
+        <div class="container">
+            <div class="section-header">
+                <span class="number">04.</span>
+                <h2 class="gradient-text">Proyectos Destacados</h2>
             </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/projects/rana_polis.png" alt="Rana vs Polis">
+                        <div class="overlay">
+                            <button class="info-btn" onclick="openModal('modal1')"><i class='bx bx-info-circle'></i></button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Rana vs Polis</h3>
+                        <p>Juego 2D desarrollado en Python con Pygame, donde controlas una rana que recoge monedas mientras evita coches de policía.</p>
+                        <div class="tags">
+                            <span class="tag python">Python</span>
+                            <span class="tag pygame">Pygame</span>
+                        </div>
+                        <a href="https://github.com/LynAguayo/Python-Game---Frog-VS-Police" target="_blank" class="project-link"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
 
-            <div class="projects-card">
-                <img src="images/projects/javacar.png">
-                <h3>JavaCar</h3>
-                <p>Es un sistema de gestión de alquiler de vehículos desarrollado en <strong>Java</strong> para la
-                    terminal. Arquitectura modular con gestión para clientes y administradores,
-                    cálculo de etiquetas DGT, recompensas ecológicas y almacenamiento en archivos.
-                </p>
-                <a href="https://github.com/LynAguayo/Projecte-OOP-JavaCar" class="btn">Ver Proyecto</a>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/projects/javacar.png" alt="JavaCar">
+                        <div class="overlay">
+                            <button class="info-btn" onclick="openModal('modal2')"><i class='bx bx-info-circle'></i></button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>JavaCar</h3>
+                        <p>Sistema de gestión de alquiler de vehículos desarrollado en Java para la terminal. Arquitectura modular con gestión para clientes y administradores.</p>
+                        <div class="tags">
+                            <span class="tag java">Java</span>
+                            <span class="tag oop">OOP</span>
+                        </div>
+                        <a href="https://github.com/LynAguayo/Projecte-OOP-JavaCar" target="_blank" class="project-link"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/projects/skinflow.png" alt="SkinFlow">
+                        <div class="overlay">
+                            <button class="info-btn" onclick="openModal('modal3')"><i class='bx bx-info-circle'></i></button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SkinFlow</h3>
+                        <p>Página web hecha con HTML, CSS y JavaScript. Presenta una rutina facial con productos de la marca Skin1004.</p>
+                        <div class="tags">
+                            <span class="tag html">HTML5</span>
+                            <span class="tag css">CSS3</span>
+                            <span class="tag js">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/LynAguayo/JavaScript-Product-Website" target="_blank" class="project-link"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/projects/ecotracker.png" alt="EcoTracker">
+                        <div class="overlay">
+                            <button class="info-btn" onclick="openModal('modal4')"><i class='bx bx-info-circle'></i></button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>EcoTracker</h3>
+                        <p>Aplicación de escritorio desarrollada con Java, JavaFX y MySQL que permite registrar y monitorizar actividades sostenibles.</p>
+                        <div class="tags">
+                            <span class="tag java">Java</span>
+                            <span class="tag javafx">JavaFX</span>
+                            <span class="tag mysql">MySQL</span>
+                        </div>
+                        <a href="https://github.com/LynAguayo/EcoTracker" target="_blank" class="project-link"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/projects/vetcare.png" alt="VetCare">
+                        <div class="overlay">
+                            <button class="info-btn" onclick="openModal('modal5')"><i class='bx bx-info-circle'></i></button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>VetCare 360</h3>
+                        <p>Módulo de Odoo para la gestión integral de clínicas veterinarias. Permite gestionar eficientemente información de mascotas, propietarios y citas.</p>
+                        <div class="tags">
+                            <span class="tag odoo">Odoo</span>
+                            <span class="tag python">Python</span>
+                            <span class="tag xml">XML</span>
+                        </div>
+                        <a href="https://github.com/LynAguayo/" target="_blank" class="project-link"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/projects/panda_calendar.png" alt="Panda Calendar">
+                        <div class="overlay">
+                            <button class="info-btn" onclick="openModal('modal6')"><i class='bx bx-info-circle'></i></button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Panda Calendar</h3>
+                        <p>Aplicación desarrollada en Java para la terminal, diseñada para gestionar tareas, finanzas personales y listas personalizadas.</p>
+                        <div class="tags">
+                            <span class="tag java">Java</span>
+                            <span class="tag cli">CLI</span>
+                        </div>
+                        <a href="https://github.com/LynAguayo/Panda_Calendar" target="_blank" class="project-link"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="projects-card">
-                <img src="images/projects/skinflow.png">
-                <h3>SkinFlow</h3>
-                <p>Es una página web hecha con <strong>HTML</strong>, <strong>CSS</strong> y
-                    <strong>JavaScript</strong>. Presenta una rutina facial con productos de la marca Skin1004.
-                    Incluye menú hamburguesa, alerta de cookies, modo claro/oscuro y formulario de acceso.
-                </p>
-                <a href="https://github.com/LynAguayo/JavaScript-Product-Website" class="btn">Ver Proyecto</a>
-            </div>
-
-            <div class="projects-card">
-                <img src="images/projects/ecotracker.png">
-                <h3>EcoTracker</h3>
-                <p>Aplicación de escritorio desarrollada con <strong>Java</strong>, <strong>JavaFX</strong> y <strong>MySQL</strong> que permite registrar y monitorizar actividades sostenibles. 
-                    Su objetivo es fomentar prácticas ecológicas individuales, calculando el ahorro estimado de CO2 por cada actividad.
-                </p>
-                <a href="https://github.com/LynAguayo/EcoTracker" class="btn">Ver Proyecto</a>
-            </div>
-
-            <div class="projects-card">
-                <img src="images/projects/vetcare.png">
-                <h3>VetCare 360</h3>
-                <p>Módulo de <strong>Odoo</strong> para la gestión integral de clínicas veterinarias. Permite gestionar eficientemente 
-                    información de mascotas, propietarios, citas y tratamientos médicos de manera organizada.
-                </p>
-                <a href="https://github.com/LynAguayo/" class="btn">Ver Proyecto</a>
-            </div>
-
-            <div class="projects-card">
-                <img src="images/projects/panda_calendar.png">
-                <h3>Panda Calendar</h3>
-                <p>Panda Calendar es una aplicación desarrollada en Java para la terminal, diseñada para gestionar
-                    tareas, finanzas personales y listas personalizadas en un solo lugar. Es sencilla, interactiva y fácil de usar.
-                </p>
-                <a href="https://github.com/LynAguayo/Panda_Calendar" class="btn">Ver Proyecto</a>
-            </div>
-
         </div>
     </section>
 
-    <!--Sección Trayectoria-->
+    <!-- Modals con información completa -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Rana vs Polis</h2>
+            <div class="modal-section">
+                <h3><i class='bx bx-trophy'></i> Retos Superados</h3>
+                <p>El mayor reto fue implementar la lógica de colisiones y el sistema de puntuación. Aprendí a manejar eventos del teclado en tiempo real y a crear animaciones fluidas con Pygame.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-code-block'></i> Mi Participación</h3>
+                <p>Desarrollé el proyecto completamente de forma individual, desde el diseño del juego hasta la implementación de todos los elementos visuales y la lógica del juego.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-heart'></i> Qué Supuso Para Mí</h3>
+                <p>Este proyecto me permitió dar mis primeros pasos en el desarrollo de videojuegos y me enseñó la importancia de la planificación en proyectos más complejos. Fue muy gratificante ver cómo algo que imaginé cobraba vida en la pantalla.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>JavaCar</h2>
+            <div class="modal-section">
+                <h3><i class='bx bx-trophy'></i> Retos Superados</h3>
+                <p>El principal reto fue diseñar la arquitectura aplicando principios de POO. Tuve que gestionar múltiples clases con herencia y polimorfismo, además de implementar un sistema de persistencia de datos en archivos.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-code-block'></i> Mi Participación</h3>
+                <p>Trabajé en equipo. Me encargué principalmente del desarrollo de la lógica de negocio, la implementación del sistema de cálculo de etiquetas DGT y el sistema de recompensas ecológicas.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-heart'></i> Qué Supuso Para Mí</h3>
+                <p>Este proyecto consolidó mis conocimientos de Java y POO. Aprendí la importancia de la gestión del tiempo y la coordinación. Fue fundamental para entender cómo estructurar proyectos grandes y mantener un código limpio y bien documentado.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>SkinFlow</h2>
+            <div class="modal-section">
+                <h3><i class='bx bx-trophy'></i> Retos Superados</h3>
+                <p>Implementar el modo oscuro/claro dinámicamente y crear un menú hamburguesa responsive fue desafiante. También aprendí a manejar cookies y localStorage para guardar las preferencias del usuario.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-code-block'></i> Mi Participación</h3>
+                <p>Proyecto individual donde me encargué de todo: diseño UX/UI, maquetación HTML/CSS y toda la funcionalidad JavaScript desde cero.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-heart'></i> Qué Supuso Para Mí</h3>
+                <p>Fue mi primer proyecto completo de desarrollo web frontend. Me enseñó la importancia del diseño responsive y la experiencia de usuario. Descubrí mi interés por crear interfaces visuales atractivas y funcionales.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>EcoTracker</h2>
+            <div class="modal-section">
+                <h3><i class='bx bx-trophy'></i> Retos Superados</h3>
+                <p>Integrar JavaFX con MySQL y diseñar una interfaz gráfica intuitiva fue complejo. El cálculo del CO2 ahorrado requirió investigación y la implementación de fórmulas precisas para cada tipo de actividad sostenible.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-code-block'></i> Mi Participación</h3>
+                <p>Proyecto colaborativo donde lideré el desarrollo de la base de datos y la integración con JavaFX. También participé en el diseño de la interfaz y la lógica de cálculo de impacto ambiental.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-heart'></i> Qué Supuso Para Mí</h3>
+                <p>Este proyecto me permitió trabajar con bases de datos relacionales en un contexto real y aprender JavaFX. Me enseñó a combinar tecnologías diferentes y me hizo más consciente de la importancia de la sostenibilidad.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>VetCare 360</h2>
+            <div class="modal-section">
+                <h3><i class='bx bx-trophy'></i> Retos Superados</h3>
+                <p>Aprender Odoo desde cero fue todo un desafío. Tuve que entender la estructura de módulos, modelos, vistas y controladores. El mayor reto fue gestionar las relaciones entre mascotas, propietarios y citas de forma eficiente.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-code-block'></i> Mi Participación</h3>
+                <p>Desarrollé el módulo completo de forma individual, incluyendo los modelos de datos, las vistas XML y la lógica de negocio en Python. Fue un proyecto muy completo que me obligó a aprender sobre un framework empresarial.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-heart'></i> Qué Supuso Para Mí</h3>
+                <p>Este proyecto me enseñó la importancia de la priorización. Al inicio tenía muchas ideas de funcionalidades, pero aprendí a usar la matriz de Eisenhower para distinguir lo urgente de lo importante. Fue clave para mi crecimiento en gestión de proyectos.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Panda Calendar</h2>
+            <div class="modal-section">
+                <h3><i class='bx bx-trophy'></i> Retos Superados</h3>
+                <p>Crear una interfaz de terminal interactiva y fácil de usar fue desafiante. Implementar múltiples funcionalidades (tareas, finanzas, listas) manteniendo el código organizado y modular requirió buena planificación.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-code-block'></i> Mi Participación</h3>
+                <p>Proyecto individual donde me encargué de toda la arquitectura, diseño de la interfaz de terminal y la implementación de las funcionalidades de gestión de tareas y finanzas personales.</p>
+            </div>
+            <div class="modal-section">
+                <h3><i class='bx bx-heart'></i> Qué Supuso Para Mí</h3>
+                <p>Me permitió consolidar mis conocimientos de Java y aprender sobre diseño de aplicaciones de terminal. Aprendí la importancia de crear interfaces intuitivas incluso en entornos sin GUI y a pensar en la experiencia del usuario en todo momento.</p>
+            </div>
+        </div>
+    </div>
+
     <section class="journey" id="journey">
-        <h2 class="section-title">Mi <span>Trayectoria</span></h2>
-
-        <!-- Elevator Pitch y Video CV -->
-        <div class="media-grid">
-            <div class="media-card">
-                <img src="images/video/elevator_pitch.png" alt="Elevator Pitch">
-                <h3 class="media-title">Elevator Pitch</h3>
-                <p class="media-description">Este vídeo es una presentación breve sobre quién soy, qué busco y qué puedo
-                    aportar a una empresa.</p>
-                <a href="https://drive.google.com/file/d/1eCg_H0PJx599-CRKJLMfaUAuVYyQPCL-/view?usp=drive_link"
-                    class="btn">Ver Vídeo</a>
+        <div class="container">
+            <div class="section-header">
+                <span class="number">05.</span>
+                <h2 class="gradient-text">Mi Journey</h2>
             </div>
-            <div class="media-card">
-                <img src="images/video/videocurriculum.png" alt="Videocurrículum">
-                <h3 class="media-title">Videocurrículum</h3>
-                <p class="media-description">En este vídeo me presento y comparto mis objetivos, mi recorrido,
-                    habilidades y algunos de mis proyectos como desarrolladora.</p>
-                <a href="https://drive.google.com/file/d/1f_Dhf-8pQAZn5pywV8K57WVsnYm0oEAX/view?usp=drive_link"
-                    class="btn">Ver Vídeo</a>
-            </div>
-        </div>
 
-        <!-- Quote -->
-        <div class="quote-box">
-            <blockquote>
-                <p>“Locura es hacer lo mismo una y otra vez y esperar resultados diferentes.”</p>
-                <p>- Albert Einstein</p>
-            </blockquote>
-        </div>
-
-        <!-- Reflexion -->
-        <div class="reflection-box">
-            <h3>Reflexión y <span>Autoevaluación</span></h3>
-            <p>
-                El primer año de <strong>DAM</strong> ha sido <strong>intenso</strong>. Escogí este ciclo porque me
-                llamaban la atención la <strong>programación</strong>, los <strong>retos</strong> y la
-                <strong>lógica</strong>. Sabía que no iba a ser fácil, pero no imaginaba cuánto iba a aprender sobre mí
-                misma en el proceso.
-            </p>
-
-            <p>
-                He empezado a programar en varios lenguajes (principalmente <strong>Java</strong> y
-                <strong>Python</strong>) y, aunque me queda muchísimo por aprender, me siento <strong>orgullosa</strong>
-                del camino recorrido. Además, he desarrollado habilidades que van más allá del código, como por ejemplo aprender
-                a <strong>gestionar la frustración</strong>, <strong>organizarme</strong> mejor, <strong>trabajar en
-                equipo</strong> y enfrentar algunas inseguridades, como <strong>hablar en público</strong>.
-            </p>
-
-           <p>
-                Al hacer mi <strong>DAFO</strong>, me di cuenta de que <strong>hablar delante de un grupo</strong> es una de mis áreas de mejora. Aunque me comunico bien con mis compañeros en el día a día, expresarme en público aún me cuesta. Soy consciente de que es muy importante mejorar esta habilidad, y sé que puedo <strong>trabajar en ella con práctica</strong>. 
-                Otra lección importante ha sido <strong>aprender a priorizar</strong>. Al empezar un proyecto, tenía muchas ideas y funcionalidades que quería añadir, pero no siempre calculaba el tiempo necesario para desarrollarlas, lo que me llevaba a ir muy justa con las fechas de entrega. Por eso, Jordi, nuestro profesor de programación, nos recomendó usar la <strong>matriz de Eisenhower</strong> para distinguir entre lo urgente y lo importante.
-            </p>
-
-            <p>
-                Actualmente, estoy realizando <strong>prácticas profesionales en Nestlé</strong>, lo que me ha permitido aplicar los conocimientos adquiridos durante el ciclo en proyectos reales. Esta experiencia me ha enseñado a <strong>adaptarme a un entorno laboral</strong>, colaborar con compañeros más experimentados, asumir <strong>responsabilidades concretas</strong> y gestionar proyectos dentro de plazos reales. Gracias a estas prácticas, estoy consolidando mi crecimiento profesional y descubriendo nuevas áreas de mejora, como la comunicación en entornos formales y la planificación eficiente de tareas.
-            </p>
-            <p>
-                En resumen, sigo motivada por <strong>mejorar mis habilidades</strong>, asumir nuevos retos y aportar valor en todos los proyectos en los que participo.
-            </p>
-
-        </div>
-
-        <!-- Recomendaciones -->
-        <div class="testimonials-container">
-            <h3>Mis <span>Recomendaciones</span></h3>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <a href="https://www.linkedin.com/in/erik-mu%C3%B1oz-arias" target="_blank">
-                        <img src="images/references/erik_munoz.jpg" alt="Erik Muñoz" class="profile-avatar">
-                    </a>
-                    <p class="testimonial-text">"Evelyn es una Junior Software Developer con un gran enfoque en
-                        Desarrollo Back-End y formación en DAM en La Salle Gràcia. Su capacidad analítica, proactividad
-                        y ganas de aprender la convierten en un activo valioso para cualquier equipo. Durante nuestra
-                        colaboración, demostró ser meticulosa y resolutiva, siempre buscando mejorar sus soluciones. Su
-                        pasión por la tecnología y su compromiso con el crecimiento profesional la hacen destacar. La
-                        recomiendo sin dudarlo para cualquier proyecto que busque talento y dedicación."</p>
-                    <p class="testimonial-name">Erik Muñoz Arias</p>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <img src="images/video/elevator_pitch.png" alt="Elevator Pitch">
+                    <div class="video-info">
+                        <h3>Elevator Pitch</h3>
+                        <p>Este vídeo es una presentación breve sobre quién soy, qué busco y qué puedo aportar a una empresa.</p>
+                        <a href="https://drive.google.com/file/d/1eCg_H0PJx599-CRKJLMfaUAuVYyQPCL-/view?usp=drive_link" target="_blank" class="btn btn-primary">Ver Vídeo</a>
+                    </div>
                 </div>
+                <div class="video-card">
+                    <img src="images/video/videocurriculum.png" alt="Videocurrículum">
+                    <div class="video-info">
+                        <h3>Videocurrículum</h3>
+                        <p>En este vídeo me presento y comparto mis objetivos, mi recorrido, habilidades y algunos de mis proyectos como desarrolladora.</p>
+                        <a href="https://drive.google.com/file/d/1f_Dhf-8pQAZn5pywV8K57WVsnYm0oEAX/view?usp=drive_link" target="_blank" class="btn btn-primary">Ver Vídeo</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="testimonial-card">
-                    <a href="https://www.linkedin.com/in/xavier-farrus-martinez" target="_blank">
-                        <img src="images/references/xavier_farruz.jpg" alt="Xavier Farrús" class="profile-avatar">
-                    </a>
-                    <p class="testimonial-text">"Evelyn Aguayo es una compañera excepcional, y trabajar con ella siempre
-                        es un gusto. Su gran capacidad de comunicación y su disposición para ayudar hacen que cualquier
-                        reto parezca más fácil. Gracias a sus habilidades y actitud colaborativa, es una pieza clave en
-                        cualquier equipo. Sin duda, tiene un enorme potencial y es alguien con quien siempre vale la
-                        pena trabajar."</p>
-                    <p class="testimonial-name">Xavier Farrús i Martínez</p>
+            <div class="quote-box">
+                <i class='bx bxs-quote-alt-left quote-icon'></i>
+                <blockquote>"Locura es hacer lo mismo una y otra vez y esperar resultados diferentes."</blockquote>
+                <p class="quote-author">— Albert Einstein</p>
+            </div>
+
+            <div class="reflection-box">
+                <h3><i class='bx bx-message-square-dots'></i> Reflexión y Autoevaluación</h3>
+                <p>El primer año de <strong>DAM</strong> ha sido <strong>intenso</strong>. Escogí este ciclo porque me llamaban la atención la <strong>programación</strong>, los <strong>retos</strong> y la <strong>lógica</strong>. Sabía que no iba a ser fácil, pero no imaginaba cuánto iba a aprender sobre mí misma en el proceso.</p>
+
+                <p>He empezado a programar en varios lenguajes (principalmente <strong>Java</strong> y <strong>Python</strong>) y, aunque me queda muchísimo por aprender, me siento <strong>orgullosa</strong> del camino recorrido. Además, he desarrollado habilidades que van más allá del código, como por ejemplo aprender a <strong>gestionar la frustración</strong>, <strong>organizarme</strong> mejor, <strong>trabajar en equipo</strong> y enfrentar algunas inseguridades, como <strong>hablar en público</strong>.</p>
+
+                <p>Al hacer mi <strong>DAFO</strong>, me di cuenta de que <strong>hablar delante de un grupo</strong> es una de mis áreas de mejora. Aunque me comunico bien con mis compañeros en el día a día, expresarme en público aún me cuesta. Soy consciente de que es muy importante mejorar esta habilidad, y sé que puedo <strong>trabajar en ella con práctica</strong>. Otra lección importante ha sido <strong>aprender a priorizar</strong>. Al empezar un proyecto, tenía muchas ideas y funcionalidades que quería añadir, pero no siempre calculaba el tiempo necesario para desarrollarlas, lo que me llevaba a ir muy justa con las fechas de entrega. Por eso, Jordi, nuestro profesor de programación, nos recomendó usar la <strong>matriz de Eisenhower</strong> para distinguir entre lo urgente y lo importante.</p>
+
+                <p>Actualmente, estoy realizando <strong>prácticas profesionales en Nestlé</strong>, lo que me ha permitido aplicar los conocimientos adquiridos durante el ciclo en proyectos reales. Esta experiencia me ha enseñado a <strong>adaptarme a un entorno laboral</strong>, colaborar con compañeros más experimentados, asumir <strong>responsabilidades concretas</strong> y gestionar proyectos dentro de plazos reales. Gracias a estas prácticas, estoy consolidando mi crecimiento profesional y descubriendo nuevas áreas de mejora, como la comunicación en entornos formales y la planificación eficiente de tareas.</p>
+
+                <p>En resumen, sigo motivada por <strong>mejorar mis habilidades</strong>, asumir nuevos retos y aportar valor en todos los proyectos en los que participo.</p>
+            </div>
+
+            <div class="testimonials-section">
+                <h3><i class='bx bx-star'></i> Recomendaciones</h3>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <img src="images/references/erik_munoz.jpg" alt="Erik Muñoz">
+                        <h4>Erik Muñoz Arias</h4>
+                        <p class="role">Software Developer</p>
+                        <p class="testimonial-text">"Evelyn es una Junior Software Developer con un gran enfoque en Desarrollo Back-End y formación en DAM en La Salle Gràcia. Su capacidad analítica, proactividad y ganas de aprender la convierten en un activo valioso para cualquier equipo. Durante nuestra colaboración, demostró ser meticulosa y resolutiva, siempre buscando mejorar sus soluciones. Su pasión por la tecnología y su compromiso con el crecimiento profesional la hacen destacar. La recomiendo sin dudarlo para cualquier proyecto que busque talento y dedicación."</p>
+                        <a href="https://www.linkedin.com/in/erik-mu%C3%B1oz-arias" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="images/references/xavier_farruz.jpg" alt="Xavier Farrús">
+                        <h4>Xavier Farrús i Martínez</h4>
+                        <p class="role">Developer</p>
+                        <p class="testimonial-text">"Evelyn Aguayo es una compañera excepcional, y trabajar con ella siempre es un gusto. Su gran capacidad de comunicación y su disposición para ayudar hacen que cualquier reto parezca más fácil. Gracias a sus habilidades y actitud colaborativa, es una pieza clave en cualquier equipo. Sin duda, tiene un enorme potencial y es alguien con quien siempre vale la pena trabajar."</p>
+                        <a href="https://www.linkedin.com/in/xavier-farrus-martinez" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Contactáme-->
+    <section class="interests">
+        <div class="container">
+            <div class="section-header">
+                <span class="number">06.</span>
+                <h2 class="gradient-text">Intereses</h2>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <img src="images/hobbies/leer.png" alt="Lectura">
+                    <h4>Lectura</h4>
+                    <p>Novelas y ciencia ficción</p>
+                </div>
+                <div class="interest-card">
+                    <img src="images/hobbies/musica.png" alt="Música">
+                    <h4>Música</h4>
+                    <p>Me ayuda a desconectar y relajarme</p>
+                </div>
+                <div class="interest-card">
+                    <img src="images/hobbies/explorar.png" alt="Tecnología">
+                    <h4>Explorar Tecnologías</h4>
+                    <p>Aprender nuevos lenguajes y frameworks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="contact" id="contact">
-        <h2 class="heading">Formulario<span> Contacto</span></h2>
-
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Nombre Completo">
-                <input type="email" placeholder="Correo Electrónico">
+        <div class="container">
+            <div class="section-header">
+                <span class="number">07.</span>
+                <h2 class="gradient-text">Contacto</h2>
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="Número Teléfono">
-                <input type="text" placeholder="Concepto">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>¿Hablamos?</h3>
+                    <p>Estoy abierta a nuevas oportunidades y colaboraciones. Si tienes un proyecto en mente o simplemente quieres conectar, no dudes en contactarme.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:lyn.aguayoc@gmail.com" class="method">
+                            <i class='bx bxl-gmail'></i>
+                            <span>lyn.aguayoc@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lynaguayo" class="method" target="_blank">
+                            <i class='bx bxl-linkedin'></i>
+                            <span>/in/lynaguayo</span>
+                        </a>
+                        <a href="https://github.com/LynAguayo" class="method" target="_blank">
+                            <i class='bx bxl-github'></i>
+                            <span>@LynAguayo</span>
+                        </a>
+                        <a href="tel:+34640954213" class="method">
+                            <i class='bx bxs-phone'></i>
+                            <span>+34 640 954 213</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Asunto" required>
+                    <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje <i class='bx bx-send'></i></button>
+                </form>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje"></textarea>
-            <input type="submit" value="Enviar" class="btn">
-        </form>
+        </div>
     </section>
 
-    <!-- Diseño del Footer-->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>&copy; 2025 Evelyn Aguayo Cayo | Todos los derechos reservados.</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Evelyn Aguayo <span class="heart">❤️</span></p>
+            <button class="scroll-top" onclick="scrollToTop()"><i class='bx bx-up-arrow-alt'></i></button>
         </div>
     </footer>
 
-    <!-- Cargamos typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- Cargamos el archivo js -->
     <script src="js/script.js"></script>
 </body>
-
 </html>
-
-<!-- test-->>
